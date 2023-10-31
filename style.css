@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.back{
+    background-color: rgb(26, 25, 25);
+}
+.front{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.textContainer{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 2000px;
+    height: 100vh;
+}
+.navBar{
+    width: 100%;
+    max-height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    font-family: 'Signika Negative', sans-serif;
+    margin-top: 3vw;
+}
+.navBar .cont1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar .cont1 .logo{
+    height:50px ;
+    width: 120px;
+}
+.navBar .cont1 .listts,.cont2 .listts{
+    display: flex;
+    align-items:flex-end;
+    margin-left: 4vw;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.l1{
+    pointer-events: all;
+    margin: 0 2.5vw;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+.l2{
+    pointer-events: all;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.textarea{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0%,-50%);
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.textarea .textLeft{
+    min-width: 50%;
+    padding: 2vw;
+}
+
+.textarea .textLeft .text1{
+    position: relative;
+    height: 8.3vw;
+    overflow: hidden;
+}
+.textarea .textLeft h1{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    line-height: 1;
+    font-family:"Kajiro";
+    font-weight: 100;
+    font-size: 10vw;
+    color: white;
+    
+}
+.textarea .textLeft h1:nth-child(1){
+    top: 0;
+
+}
+.textarea .textLeft button{
+    padding: 0.4vw 3vw;
+    font-family:"Kajiro";
+    font-size: 3vw;
+    margin-top:3.5vw;
+    cursor: pointer;
+    letter-spacing: 2px;
+    pointer-events: all;
+}
+.textarea .textRight{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+    color: white;
+    width: 20%;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: flex-end;
+}
+.textarea .textRight p{
+    text-align: end;
+    font-family: 'Signika Negative', sans-serif;
+    
+}
+.textarea .textRight p:nth-child(3){
+    text-align: end;
+    margin-bottom: 4vw;
+}
+.textRight .window{
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
